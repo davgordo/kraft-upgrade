@@ -6,6 +6,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "10"
     strimzi.io/node-pools: enabled
+    strimzi.io/kraft: migration
 spec:
   kafka:
     version: 3.9.0
