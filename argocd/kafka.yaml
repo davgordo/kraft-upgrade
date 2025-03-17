@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/davgordo/kraft-upgrade
     path: kafka
-    targetRevision: main
+    targetRevision: k-raft
   destination:
     server: https://kubernetes.default.svc
     namespace: default
