@@ -5,13 +5,13 @@
 1. Install ArgoCD
 
 ```
-oc apply -f argocd/bootstrap
+oc apply -k argocd/bootstrap/operator
 ```
 
 2. Configure ArgoCD instance
 
 ```
-oc apply -f argocd/instance
+oc apply -k argocd/bootstrap/instance
 ```
 
 3. Deploy Kafka
