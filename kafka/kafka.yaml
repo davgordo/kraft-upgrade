@@ -26,7 +26,6 @@ spec:
       transaction.state.log.min.isr: 2
       default.replication.factor: 3
       min.insync.replicas: 2
-      inter.broker.protocol.version: "3.9"
     storage:
       type: jbod
       volumes:
@@ -34,10 +33,4 @@ spec:
         type: persistent-claim
         size: 10Gi
         deleteClaim: false
-  zookeeper:
-    replicas: 3
-    storage:
-      type: persistent-claim
-      size: 10Gi
-      deleteClaim: false
   entityOperator: {}
