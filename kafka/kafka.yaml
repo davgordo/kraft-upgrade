@@ -2,7 +2,9 @@ apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:
   name: my-cluster
-  namespace: my-project                                            ##currently disabled .
+  namespace: my-project
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
 spec:
   kafka:
     version: 3.9.0
