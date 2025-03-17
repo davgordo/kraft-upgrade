@@ -5,6 +5,7 @@ metadata:
   namespace: my-project
   annotations:
     argocd.argoproj.io/sync-wave: "10"
+    strimzi.io/node-pools: enabled
 spec:
   kafka:
     version: 3.9.0
